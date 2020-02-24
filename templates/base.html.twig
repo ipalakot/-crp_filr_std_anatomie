@@ -7,8 +7,7 @@
 
         {% block stylesheets %}{% endblock %}
     </head>
-    
-   <nav class="navbar navbar-light bg-primary " >
+       <nav class="navbar navbar-light bg-primary " >
       <form class="form-inline">
         <a href="{{path('home')}}" > 
               <button class="btn btn-outline-success bg-dark" type="button"  bg-dark>ACCUEIL</button> 
@@ -18,7 +17,7 @@
           <button class="btn btn-sm btn-outline-secondary bg-dark" type="button" >A Propos</button>
         </a>
       
-        <a href="#" >
+        <a href="{{path('fos_user_registration_register')}}" >
           <button class="btn btn-sm btn-outline-secondary" type="button" >Enregistrement </button>
         </a>
         
@@ -32,7 +31,6 @@
       </form>
 
 </nav>
-
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
